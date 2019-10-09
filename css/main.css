@@ -1,0 +1,933 @@
+/* ------ Fonts ------ */
+
+@font-face {
+	font-family: 'Museo Sans 100';
+	src: url('../fonts/MuseoSansCyrl 100.otf');
+}
+
+@font-face {
+	font-family: 'Museo Sans 300';
+	src: url('../fonts/MuseoSansCyrl 300.otf');
+}
+
+@font-face {
+	font-family: 'Museo Sans 700';
+	src: url('../fonts/MuseoSansCyrl 700.otf');
+}
+
+@font-face {
+	font-family: 'Museo Sans 900';
+	src: url('../fonts/MuseoSansCyrl 900.otf');
+}
+
+/* ------ Specification ------ */
+
+body {
+	font-family: 'Museo Sans 300', sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	letter-spacing: 0;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Museo Sans 700', sans-serif;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+
+.container-fluid_plain {
+	padding: 0;
+}
+
+.btn {
+	background-color: #1cb883;
+	width: 156px;
+	padding: 7px 0;
+	font-size: 13px;
+	border-radius: 0;
+	border-bottom: 3px solid #149d6f;
+	color: #fff;
+	font-family: 'Museo Sans 700';
+
+}
+
+/* ------ First screen ------ */
+/* ------ class header ------ */
+
+.header {
+	padding-top: 23px;
+	background-color: #c8ccdb;
+	-webkit-box-shadow: inset 0px 6px 0px 0px rgba(88,100,122,0.8);
+	-moz-box-shadow: inset 0px 6px 0px 0px rgba(88,100,122,0.8);
+	box-shadow: inset 0px 6px 0px 0px rgba(88,100,122,0.8);
+}
+
+.header__logo {
+	padding-bottom: 12px;
+}
+
+.header__list {
+	padding-top: 20px;
+    padding-left: 37px;
+}
+
+.header__item {
+	font-family: 'Museo Sans 700';
+	font-size: 17px;
+	color: #3f4b60;
+}
+
+.header__item:hover {
+	color: #112e62;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.header__item:focus {
+	color: #112e62;
+	transition: all 0.5s ease;
+	outline: none;
+	cursor: pointer;
+}
+
+.fa-phone {
+	color: #46e6b0;
+	margin-right: 5px;
+	font-size: 13px;
+}
+
+.header__btn {
+    margin-top: 14px;
+}
+
+.menu-opened .header__menu {
+	flex-direction: column;
+	text-align: center;
+}
+
+.menu-opened li {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #babdcb;
+}
+
+.btn:hover {
+	background-color: #18976c;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	color: #fff;
+}
+
+.btn:focus {
+	background-color: #18976c;
+	transition: all 0.5s ease;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+}
+
+.header__opener {
+	background: none;
+    border: none;
+    font-size: 26px;
+    color: #3f4b60;
+    margin-top: 15px;
+}
+
+/* class offer */
+
+.offer {
+	background: #c8ccdb url('../img/home/background.png') no-repeat center top/cover;
+	padding-top: 90px;
+	padding-bottom: 146px;
+	-webkit-box-shadow: 0px -4px 0px 0px rgba(199,205,227,0.9);
+	-moz-box-shadow: 0px -4px 0px 0px rgba(199,205,227,0.9);
+	box-shadow: 0px -4px 0px 0px rgba(199,205,227,0.9);
+}
+
+.offer__title {
+	font-size: 58px;
+	color: #081d42;
+	margin-bottom: 13px;
+}
+
+.offer__text {
+	font-family: 'Museo Sans 100';
+	font-size: 29px;
+	color: #081d42;
+	max-width: 457px;
+	line-height: 1.2em;
+	margin-bottom: 29px;
+}
+
+.offer__wrapper {
+	width: 171px;
+	background-color: rgba(255, 255, 255, 0.85);
+	-webkit-box-shadow: 0px 0px 0px 2px rgba(233,231,234,0.5);
+	-moz-box-shadow: 0px 0px 0px 2px rgba(233,231,234,0.5);
+	box-shadow: 0px 0px 0px 2px rgba(233,231,234,0.5);
+	border-radius: 2px;
+	padding: 10px;
+	text-align: center;
+	align-items: center;
+}
+
+.offer__item {
+	width: 31px;
+    height: 31px;
+    border-width: 2px;
+    border-style: solid;
+    padding-top: 3px;
+}
+
+.offer__item_dark-blue {
+	color: #3d6ca8;
+}
+
+.offer__item:hover {
+	-webkit-box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.54);
+	-moz-box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.54);
+	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.54);
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.offer__item:focus {
+	-webkit-box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.54);
+	-moz-box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.54);
+	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.54);
+	cursor: pointer;
+	outline: none;
+	transition: all 0.5s ease;
+}
+
+.fa-facebook-square {
+	color: #3d6ca8;
+	font-size: 16.67px;
+}
+
+.offer__item_light-blue {
+	color: #43c9fd;
+}
+
+.fa-twitter {
+	color: #43c9fd;
+	font-size: 16.67px;
+}
+
+.offer__item_blue {
+	color: #33a8d5;
+}
+
+.fa-telegram-plane {
+	color: #33a8d5;
+	font-size: 16.67px;
+}
+
+/* class trust */
+
+.trust {
+	-webkit-box-shadow: 0px -15px 0px 0px rgba(255,255,255,0.34);
+	-moz-box-shadow: 0px -15px 0px 0px rgba(255,255,255,0.34);
+	box-shadow: 0px -15px 0px 0px rgba(255,255,255,0.34);
+	background-color: #f1f1f3;
+	padding-top: 55px;
+}
+
+.trust__title {
+	font-size: 29.17px;
+	color: #081d42;
+	margin-bottom: 38px;
+}
+
+.trust__wrapper {
+	padding-bottom: 99px;
+}
+
+.trust__wrap {
+	background-color: #c8cbdb;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.trust__pic {
+	position: absolute;
+	top: 27px;
+	left: 35px;
+}
+
+.trust__pic_second {
+	top: 33px;
+	left: 28px;
+}
+
+.trust__pic_third {
+	top: 31px;
+	left: 30px;
+}
+
+.trust__header {
+	font-size: 21px;
+	color: #081d42;
+	margin-bottom: 11px;
+}
+
+.trust__text {
+	color: #404048;
+	line-height: 1.3em;
+}
+
+.trust__btn {
+	padding: 11px 0;
+    position: absolute;
+    top: -24px;
+    left: 490px;
+    font-size: 16px;
+    font-family: 'Museo Sans 700';
+    width: 168px;
+}
+
+/* class explain */
+
+.explain {
+	padding-top: 102px;
+	padding-bottom: 78px;
+	background-color: #fff;
+}
+
+.explain__letter {
+	background-color: #102e62;
+	border-radius: 50%;
+	font-family: 'Museo Sans 100';
+	font-size: 50.11px;
+	color: #fff;
+	padding: 14px 32px;
+}
+
+.explain__title {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	font-family: 'Museo Sans 100';
+	font-size: 24px;
+	color: #081d42;
+}
+
+.explain__sign {
+	color: #b81c31;
+}
+
+.explain__text {
+	color: #404048;
+	line-height: 1.3em;
+}
+
+/* section mission */
+
+.mission {
+	background: #606b7f url(../img/home/background2.png) no-repeat center center/cover;
+	padding-top: 40px;
+	padding-bottom: 29px;
+}
+
+.mission__title, .news__title {
+	font-size: 23px;
+	color: #a9aeb8;
+}
+
+.mission__wrap, .news__list {
+	border-top: 2px solid #6e798b;
+}
+
+.mission__wrap {
+	padding-top: 20px;
+	margin-bottom: 17px;
+}
+
+.mission__text {
+	font-size: 15px;
+	color: rgba(255,255,255,0.8);
+	line-height: 1.3em;
+}
+
+.mission__text_first {
+	margin-bottom: 17px;
+}
+
+.mission__wrap-extra_first {
+	margin-right: 45px;
+}
+
+.mission__btn {
+	border: 2px solid #ced1d8;
+	background: #606c80;
+	color: #dadce0;
+	font-family: 'Museo Sans 700';
+	font-size: 15.83px;
+	width: 175px;
+    padding: 9px 0;
+    margin-top: 20px;
+}
+
+.mission__btn:hover {
+	color: #606b80;
+	background-color: #dadce0;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.mission__btn:focus {
+	color: #606b80;
+	background-color: #dadce0;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+
+/* section news */
+
+.news__header {
+	font-size: 12.5px;
+	color: rgba(255,255,255,0.8);
+}
+
+.news__data {
+	font-family: 'Museo Sans 100';
+	font-size: 10.42px;
+	color: rgba(255,255,255,0.5);
+}
+
+.news__item {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding-bottom: 10px;
+    padding-top: 27px;
+}
+
+.news__pic {
+	margin-right: 10px;
+	height: 57px;
+}
+
+.news__header {
+	margin-bottom: 11px;
+	width: 90%;
+}
+
+.news__link:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #fff;
+}
+
+.news__link:focus {
+	text-decoration: underline;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+}
+
+/* footer */
+
+.footer {
+	background-color: #3a4456;
+	padding-top: 33px;
+}
+
+.footer__title {
+	font-size: 19px;
+	color: rgba(255,255,255,0.7);
+	margin-bottom: 20px;
+}
+
+.footer__link {
+	color: rgba(255,255,255,0.5);
+}
+
+.footer__link:hover {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.footer__link:focus {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.footer__wrapper {
+	margin-top: 5px;
+	margin-bottom: 36px;
+}
+
+.low {
+	background-color: #1f2531;
+	-webkit-box-shadow: inset 0px -20px 0px 0px rgba(88,100,122,1);
+	-moz-box-shadow: inset 0px -20px 0px 0px rgba(88,100,122,1);
+	box-shadow: inset 0px -20px 0px 0px rgba(88,100,122,1);
+}
+
+.low__wrapper {
+	padding-top: 35px;
+    padding-bottom: 42px;
+    padding-left: 20px;
+}
+
+.low__wrap {
+	margin-bottom: 10px;
+}
+
+.low__text, .low__link {
+	font-family: 'Museo Sans 100';
+	font-size: 12px;
+	color: rgba(255,255,255,0.7);
+}
+
+.low__link:hover {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.low__link:focus {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+}
+
+.couching {
+	padding-top: 40px;
+	margin-bottom: 21px;
+}
+
+.couching__sign {
+	font-family: 'Museo Sans 100';
+	font-size: 14.58px;
+	color: rgba(255,255,255,0.7);
+	border: 1px solid rgba(255,255,255,0.7);
+	padding: 0 4px;
+	height: 24px;
+	text-align: center;
+	margin-right: 12px;
+	margin-top: 5px;
+}
+
+.couching__text {
+	font-family: 'Museo Sans 100';
+	font-size: 10.42px;
+	color: rgba(255,255,255,0.7);
+}
+
+.couching__text span {
+	text-transform: uppercase;
+	font-family: 'Museo Sans 100';
+	font-size: 12.08px;
+	color: rgba(255,255,255,0.7);
+}
+
+.rights__text {
+	font-family: 'Museo Sans 100';
+	font-size: 12.08px;
+	color: rgba(255,255,255,0.7);
+}
+
+.rights__text span {
+	font-family: 'Museo Sans 700';
+}
+
+.rights__link {
+	color: rgba(255,255,255,0.7);
+}
+
+.rights__link:hover {
+	text-decoration: underline;
+	color: rgba(255,255,255,0.7);
+	cursor: pointer;
+}
+
+.rights__link:focus {
+	text-decoration: underline;
+	outline: none;
+	cursor: pointer;
+}
+
+.call__btn {
+	margin-top: 68px;
+}
+
+/* ----- Second screen ----- */
+/* header */
+
+.header_second {
+	background-color: #e5e6e8;
+}
+
+/* section about */
+
+.about {
+	background-color: #fafafb;
+	-webkit-box-shadow: 0px -4px 0px 0px rgba(241,241,243,1);
+	-moz-box-shadow: 0px -4px 0px 0px rgba(241,241,243,1);
+	box-shadow: 0px -4px 0px 0px rgba(241,241,243,1);
+	padding-top: 60px;
+	padding-bottom: 68px;
+}
+
+.about__title {
+	font-size: 37.5px;
+	color: #081d42;
+}
+
+.about__link {
+	font-size: 15.62px;
+	color: #7e838d;
+}
+
+.about__link:hover {
+	color: #49556b;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.about__link:focus {
+	color: #49556b;
+	text-decoration: underline;
+	outline: none;
+	cursor: pointer;
+}
+
+.about__arrow {
+	font-size: 11px;
+	color: #7e838d;
+}
+
+.about__link-item {
+	font-family: 'Museo Sans 700';
+	font-size: 15.83px;
+	color: #a1a6af;
+	padding: 11px 16px 11px 16px;
+	border: 2px solid transparent;
+}
+
+.about__link-item:hover {
+	color: #b81c31;
+	border-color: #b81c31;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.about__link-item:focus {
+	color: #b81c31;
+	border-color: #b81c31;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
+
+/* section benefits */
+
+.benefits {
+	padding-top: 50px;
+}
+
+.benefits__title {
+	font-size: 29.17px;
+	letter-spacing: 0.02em;
+	color: #081d42;
+	margin-bottom: 29px;
+}
+
+.benefits__text {
+	font-size: 15px;
+	letter-spacing: 0.02em;
+	color: #404048;
+	line-height: 1.3em;
+	margin-bottom: 30px;
+}
+
+.benefits__item_first {
+	border-top: 2px solid #e5e6e8;
+}
+
+.benefits__item {
+	padding-top: 34px;
+	padding-bottom: 30px;
+}
+
+.benefits__pic {
+	margin-right: 39px;
+    height: 60px;
+}
+
+.benefits__header {
+	font-size: 18.33px;
+	letter-spacing: 0.02em;
+	color: #081d42;
+	margin-bottom: 15px;
+}
+
+.benefits__description {
+	letter-spacing: 0.02em;
+	color: #404048;
+	line-height: 1.3em;
+}
+
+.benefits__line {
+	background-color: #e5e6e8;
+	height: 2px;
+}
+
+/* section photo */
+
+.photo {
+	padding-top: 48px;
+	padding-bottom: 71px;
+}
+
+.photo__title {
+	font-size: 29.17px;
+	letter-spacing: 0.02em;
+	color: #081d42;
+	margin-bottom: 41px;
+}
+
+.photo__hover {
+	-webkit-box-shadow: inset 0px 0px 0px 9px rgba(154,151,167,0.9);
+	-moz-box-shadow: inset 0px 0px 0px 9px rgba(154,151,167,0.9);
+	box-shadow: inset 0px 0px 0px 9px rgba(154,151,167,0.9);
+	background: rgba(58,68,86,0.7);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo__wrapper {
+	position: relative;
+	max-width: 269px;
+}
+
+.photo__wrapper:hover .photo__hover  {
+	opacity: 1;
+}
+
+.photo__img {
+	display: block;
+	width: 100%;
+}
+
+/* Modal Window */
+
+.box-modal {
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 50px;
+}
+
+.box-modal__form {
+	max-width: 308px;
+}
+
+.box-modal__title {
+	font-size: 21px;
+	color: #081d42;
+	margin-bottom: 14px;
+}
+
+.box-modal__text {
+	color: #404048;
+	letter-spacing: 0.02em;
+	margin-bottom: 22px;
+}
+
+.box-modal__input {
+	border: none;
+	border-bottom: 1px solid #757888;
+	display: block;
+	color: #404048;
+	padding-bottom: 7px;
+	margin-bottom: 19px;
+	width: 100%;
+}
+
+.box-modal__input:hover {
+	color: #000;
+	border-bottom: 2px solid #757888;
+}
+
+.box-modal__input:hover::placeholder {
+	color: #000;
+}
+
+.box-modal__btn {
+	width: 100%;
+}
+
+.box-modal__input:focus {
+	outline: none;
+	color: #000;
+	border-bottom: 2px solid #757888;
+}
+
+/* Media Queries */
+
+/* 992 - 1200 px/ col-lg*/
+@media screen and (max-width: 1200px) {
+	.header__list {
+		padding-left: 0;
+	}
+
+	.trust__btn {
+		left: 401px;
+	}
+
+	.photo__wrapper {
+		margin-bottom: 40px;
+	}
+}
+
+/* 768 - 992 px/ col-md */
+@media screen and (max-width: 992px) {
+	.explain__wrapper, .mission__btn {
+		margin-bottom: 40px;
+	}
+
+	.trust__btn {
+		left: 281px;
+	}
+
+	.about__title, .about__wrapper {
+		text-align: center;
+	}
+
+	.about__list {
+		margin-top: 40px;
+	}
+}
+
+/* 576 - 768 px/ col-sm */
+@media screen and (max-width: 768px) {
+	.offer {
+		padding-top: 60px;
+		padding-bottom: 86px;
+	}
+
+	.trust__wrapper {
+    	padding-bottom: 59px;
+	}
+
+	.trust__btn {
+		left: 191px;
+	}
+
+	.rights, .low__wrapper {
+		margin-bottom: 40px;
+	}
+
+	.about__list {
+		padding-left: 0;
+	}
+
+	.about__link-item {
+		padding: 8px 13px 8px 13px;
+	}
+}
+
+/* 320 - 576 px/ col */
+@media screen and (max-width: 576px) {
+	.header__btn {
+		margin-bottom: 20px;
+	}
+	
+	.footer__wrapper, .low__wrapper, .couching, .rights {
+		text-align: center;
+	}
+
+	.offer__title {
+		font-size: 40px;
+	}
+
+	.offer__text {
+		font-size: 17px;
+	}
+
+	.trust__title {
+		font-size: 25px;
+	}
+
+	.trust__btn {
+		left: 81px;
+	}
+
+	.mission__wrap {
+		flex-wrap: wrap;
+	}
+
+	.low__wrapper {
+		padding-bottom: 0;
+	}
+
+	.couching {
+		justify-content: center;
+	}
+
+	.call__btn {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.about__list {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.about__item {
+		margin-bottom: 20px;
+	}
+
+	.benefits__item {
+		flex-direction: column;
+	}
+
+	.benefits__pic {
+		width: 60px;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+}
